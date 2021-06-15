@@ -16,7 +16,7 @@ c = config_sim(simulation_parameters)
 # The configurations above are then packaged into a `Configuration` object
 # #.append_model    <-- append model is the new way to do this in the future, append config is the old way.
 exp.append_configs(   
-    model_id = 'sys_model',
+    model_id = 'sys_model_1',
     initial_state=genesis_states_1, #dict containing variable names and initial values
     partial_state_update_blocks=partial_state_update_blocks, #dict containing state update functions
     sim_configs=c #preprocessed dictionaries containing simulation parameters
@@ -35,7 +35,7 @@ c = config_sim(simulation_parameters)
 # The configurations above are then packaged into a `Configuration` object
 # #.append_model    <-- append model is the new way to do this in the future, append config is the old way.
 exp.append_configs(   
-    model_id = 'sys_model',
+    model_id = 'sys_model_2',
     initial_state=genesis_states_2, #dict containing variable names and initial values
     partial_state_update_blocks=partial_state_update_blocks, #dict containing state update functions
     sim_configs=c #preprocessed dictionaries containing simulation parameters
